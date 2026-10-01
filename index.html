@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yaedigital</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="#topo">YAEDIGITAL</a>
+  <a class="btn zap" href="https://wa.me/5500000000000" target="_blank" rel="noopener">Contato no WhatsApp</a>
+  <span class="spacer"></span>
+  <a class="btn ig" href="https://instagram.com/yaedigital" target="_blank" rel="noopener">Instagram</a>
+  <a class="btn me" href="#sobre" id="btnSobre">Sobre mim</a>
+</header>
+
+<section class="hero" id="sobre">
+  <div class="hero-in">
+    <span class="tag">MINHA HISTÓRIA</span>
+    <h2>Yaedigital</h2>
+    <p>Escreva aqui a sua história: como começou no mundo digital, o que te motiva e o que você gosta de criar. Este espaço aceita um texto mais longo, em dois ou três parágrafos.</p>
+    <p>Conte o que diferencia o seu trabalho, os resultados que já entregou e como é trabalhar com você.</p>
+    <div class="row">
+      <a class="btn play" href="#servicos">Ver serviços</a>
+      <a class="btn info" href="#postagens">Ver postagens</a>
+    </div>
+  </div>
+</section>
+
+<main id="servicos">
+  <h2 class="row-title">Meus serviços</h2>
+  <div class="services" id="services"></div>
+</main>
+
+<footer id="postagens">
+  <div class="frow">
+    <h2>Postagens</h2>
+    <button class="nav l" id="prev" aria-label="Anterior">&#8249;</button>
+    <div class="track" id="track"></div>
+    <button class="nav r" id="next" aria-label="Próxima">&#8250;</button>
+  </div>
+  <p class="copy">© Yaedigital</p>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+  <div class="box" id="box">
+    <div class="cover"><h3 id="mTitle"></h3></div>
+    <div class="mbody"><p id="mText"></p><button class="btn me" id="mClose">Fechar</button></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
