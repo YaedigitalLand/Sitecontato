@@ -1,57 +1,145 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Yaedigital</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yaedigital</title>
 </head>
 <body>
 
-<header>
-  <a class="logo" href="#topo">YAEDIGITAL</a>
-  <a class="btn zap" href="https://wa.me/5500000000000" target="_blank" rel="noopener">Contato no WhatsApp</a>
-  <span class="spacer"></span>
-  <a class="btn ig" href="https://instagram.com/yaedigital" target="_blank" rel="noopener">Instagram</a>
-  <a class="btn me" href="#sobre" id="btnSobre">Sobre mim</a>
-</header>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Yaedigital</h1>
+    <nav>
+      <!-- Botão à esquerda -->
+      <a href="https://wa.me/5500000000000" target="_blank">Contato no WhatsApp</a>
 
-<section class="hero" id="sobre">
-  <div class="hero-in">
-    <span class="tag">MINHA HISTÓRIA</span>
-    <h2>Yaedigital</h2>
-    <p>Escreva aqui a sua história: como começou no mundo digital, o que te motiva e o que você gosta de criar. Este espaço aceita um texto mais longo, em dois ou três parágrafos.</p>
-    <p>Conte o que diferencia o seu trabalho, os resultados que já entregou e como é trabalhar com você.</p>
-    <div class="row">
-      <a class="btn play" href="#servicos">Ver serviços</a>
-      <a class="btn info" href="#postagens">Ver postagens</a>
-    </div>
-  </div>
-</section>
+      <!-- Espaço e botões no canto direito -->
+      <div>
+        <a href="https://instagram.com/yaedigital" target="_blank">Instagram</a>
+        <a href="#sobre">Sobre mim</a>
+      </div>
+    </nav>
+  </header>
 
-<main id="servicos">
-  <h2 class="row-title">Meus serviços</h2>
-  <div class="services" id="services"></div>
-</main>
+  <main>
+    <!-- Seção Sobre Mim / Minha História -->
+    <section id="sobre">
+      <p>MINHA HISTÓRIA</p>
+      <h2>Yaedigital</h2>
+      <p>
+        Escreva aqui a sua história: como começou no mundo digital, o que te motiva e o que você gosta de criar. Este espaço aceita um texto mais longo, em dois ou três parágrafos.
+      </p>
+      <p>
+        Conte o que diferencia o seu trabalho, os resultados que já entregou e como é trabalhar com você.
+      </p>
+      <div>
+        <a href="#servicos">Ver serviços</a>
+        <a href="#postagens">Ver postagens</a>
+      </div>
+    </section>
 
-<footer id="postagens">
-  <div class="frow">
-    <h2>Postagens</h2>
-    <button class="nav l" id="prev" aria-label="Anterior">&#8249;</button>
-    <div class="track" id="track"></div>
-    <button class="nav r" id="next" aria-label="Próxima">&#8250;</button>
-  </div>
-  <p class="copy">© Yaedigital</p>
-</footer>
+    <!-- Seção de Serviços (3 blocos) -->
+    <section id="servicos">
+      <h2>Meus serviços</h2>
+      <div>
+        <article>
+          <h3>Serviço 1</h3>
+          <p>Descreva em uma frase o que você entrega neste serviço.</p>
+          <button type="button">Saiba mais</button>
+        </article>
 
-<div class="modal" id="modal" role="dialog" aria-modal="true">
-  <div class="box" id="box">
-    <div class="cover"><h3 id="mTitle"></h3></div>
-    <div class="mbody"><p id="mText"></p><button class="btn me" id="mClose">Fechar</button></div>
-  </div>
-</div>
+        <article>
+          <h3>Serviço 2</h3>
+          <p>Descreva em uma frase o que você entrega neste serviço.</p>
+          <button type="button">Saiba mais</button>
+        </article>
 
-<script src="script.js"></script>
+        <article>
+          <h3>Serviço 3</h3>
+          <p>Descreva em uma frase o que você entrega neste serviço.</p>
+          <button type="button">Saiba mais</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção de Postagens (8 blocos para o carrossel) -->
+    <section id="postagens">
+      <h2>Postagens</h2>
+      <div>
+        <article>
+          <h3>Postagem 1</h3>
+          <p>
+            Este é um texto de exemplo para a sua postagem. Substitua por aquilo que você quer contar: um bastidor de projeto, uma dica, um resultado de cliente ou uma novidade. O card foi feito para comportar cerca de quinhentos caracteres, o que dá espaço para explicar a ideia com calma, trazer contexto e terminar com um convite à ação. Ao clicar, o texto completo abre em uma janela para leitura sem pressa. Edite o título e o conteúdo no código, na lista chamada posts, e o carrossel se atualiza sozinho.
+          </p>
+          <button type="button">Ler completo</button>
+        </article>
+
+        <article>
+          <h3>Postagem 2</h3>
+          <p>
+            Este é um texto de exemplo para a sua postagem. Substitua por aquilo que você quer contar: um bastidor de projeto, uma dica, um resultado de cliente ou uma novidade. O card foi feito para comportar cerca de quinhentos caracteres, o que dá espaço para explicar a ideia com calma, trazer contexto e terminar com um convite à ação. Ao clicar, o texto completo abre em uma janela para leitura sem pressa. Edite o título e o conteúdo no código, na lista chamada posts, e o carrossel se atualiza sozinho.
+          </p>
+          <button type="button">Ler completo</button>
+        </article>
+
+        <article>
+          <h3>Postagem 3</h3>
+          <p>
+            Este é um texto de exemplo para a sua postagem. Substitua por aquilo que você quer contar: um bastidor de projeto, uma dica, um resultado de cliente ou uma novidade. O card foi feito para comportar cerca de quinhentos caracteres, o que dá espaço para explicar a ideia com calma, trazer contexto e terminar com um convite à ação. Ao clicar, o texto completo abre em uma janela para leitura sem pressa. Edite o título e o conteúdo no código, na lista chamada posts, e o carrossel se atualiza sozinho.
+          </p>
+          <button type="button">Ler completo</button>
+        </article>
+
+        <article>
+          <h3>Postagem 4</h3>
+          <p>
+            Este é um texto de exemplo para a sua postagem. Substitua por aquilo que você quer contar: um bastidor de projeto, uma dica, um resultado de cliente ou uma novidade. O card foi feito para comportar cerca de quinhentos caracteres, o que dá espaço para explicar a ideia com calma, trazer contexto e terminar com um convite à ação. Ao clicar, o texto completo abre em uma janela para leitura sem pressa. Edite o título e o conteúdo no código, na lista chamada posts, e o carrossel se atualiza sozinho.
+          </p>
+          <button type="button">Ler completo</button>
+        </article>
+
+        <article>
+          <h3>Postagem 5</h3>
+          <p>
+            Este é um texto de exemplo para a sua postagem. Substitua por aquilo que você quer contar: um bastidor de projeto, uma dica, um resultado de cliente ou uma novidade. O card foi feito para comportar cerca de quinhentos caracteres, o que dá espaço para explicar a ideia com calma, trazer contexto e terminar com um convite à ação. Ao clicar, o texto completo abre em uma janela para leitura sem pressa. Edite o título e o conteúdo no código, na lista chamada posts, e o carrossel se atualiza sozinho.
+          </p>
+          <button type="button">Ler completo</button>
+        </article>
+
+        <article>
+          <h3>Postagem 6</h3>
+          <p>
+            Este é um texto de exemplo para a sua postagem. Substitua por aquilo que você quer contar: um bastidor de projeto, uma dica, um resultado de cliente ou uma novidade. O card foi feito para comportar cerca de quinhentos caracteres, o que dá espaço para explicar a ideia com calma, trazer contexto e terminar com um convite à ação. Ao clicar, o texto completo abre em uma janela para leitura sem pressa. Edite o título e o conteúdo no código, na lista chamada posts, e o carrossel se atualiza sozinho.
+          </p>
+          <button type="button">Ler completo</button>
+        </article>
+
+        <article>
+          <h3>Postagem 7</h3>
+          <p>
+            Este é um texto de exemplo para a sua postagem. Substitua por aquilo que você quer contar: um bastidor de projeto, uma dica, um resultado de cliente ou uma novidade. O card foi feito para comportar cerca de quinhentos caracteres, o que dá espaço para explicar a ideia com calma, trazer contexto e terminar com um convite à ação. Ao clicar, o texto completo abre em uma janela para leitura sem pressa. Edite o título e o conteúdo no código, na lista chamada posts, e o carrossel se atualiza sozinho.
+          </p>
+          <button type="button">Ler completo</button>
+        </article>
+
+        <article>
+          <h3>Postagem 8</h3>
+          <p>
+            Este é um texto de exemplo para a sua postagem. Substitua por aquilo que você quer contar: um bastidor de projeto, uma dica, um resultado de cliente ou uma novidade. O card foi feito para comportar cerca de quinhentos caracteres, o que dá espaço para explicar a ideia com calma, trazer contexto e terminar com um convite à ação. Ao clicar, o texto completo abre em uma janela para leitura sem pressa. Edite o título e o conteúdo no código, na lista chamada posts, e o carrossel se atualiza sozinho.
+          </p>
+          <button type="button">Ler completo</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; Yaedigital. Todos os direitos reservados.</p>
+  </footer>
+
 </body>
 </html>
